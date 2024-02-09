@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TubeInsight</title>
+    <link rel="icon" href="images/—Pngtree—youtube logo icon_3560548.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=DM+Serif+Display:ital@0;1&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://th.bing.com/th/id/R.bf9fcf280a64946b7ab81bb3efa8eb15?rik=pVOrsgmQHZtOnw&riu=http%3a%2f%2f4.bp.blogspot.com%2f-bu27bOORGTY%2fTnfIey9unII%2fAAAAAAAABLs%2fS-DrEnSjqpo%2fs1600%2fyoutube_logo_grunge_desktop_background_Vvallpaper.net.jpg&ehk=gf8U9XFyeg8yMK5lZSIG%2f9xtXXAmQ9VEJn%2fmbweI1Jc%3d&risl=&pid=ImgRaw&r=0');
+            /* Replace with your background image */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'DM Serif Display', serif;
+        }
+
+        #main-container {
+            background-color: rgb(46 14 14 / 73%);
+            color: white;
+            padding: 20px;
+            border-radius: 70px;
+            width: 69%;
+
+        }
+
+        #main-container p {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            text-align: center;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 23px;
+            padding: 3px 28px;
+        }
+
+        span {
+            background-image: url("images/YouTube_logo.png");
+            background-size: cover;
+            border-radius: 29px;
+            padding: 7px 45px;
+            margin: 3px;
+            color: rgb(0 0 0);
+            width: 100%;
+        }
+
+        #video-link-input,
+        #description-input {
+            margin-bottom: 10px;
+        }
+
+        #result-button {
+            margin-bottom: 10px;
+            background-color: rgb(205 0 0);
+            border: 2px solid wheat;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="main-container">
+        <h1 class="text-center"><span></span>Insight</h1>
+
+        <p id="description">
+            Welcome to the TubeInsight-YouTube Comment Analyzer! This tool helps you analyze comments on a YouTube video
+            and provides insights. Simply enter the YouTube video link, and click "Generate Result" to see
+            the analysis. Gain valuable information about the comments on your favorite videos!
+        </p>
+
+        <div class="form-group">
+            <label for="video-link-input">YouTube Video Link:</label>
+            <input type="text" class="form-control" id="video-link-input" placeholder="Enter YouTube Video Link">
+        </div>
+
+        <button class="btn btn-primary btn-block" id="result-button">Generate Result</button>
+
+        <!-- Results will be displayed here -->
+        <div id="result-container" class="mt-4">
+            <!-- Results will be added here using JavaScript -->
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script type="text/javascript" src="js/all.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Add your JavaScript code for handling the YouTube comment analysis here
+        document.getElementById('result-button').addEventListener('click', function () {
+            // Replace this with your logic to generate and display results
+            var resultContainer = document.getElementById('result-container');
+            resultContainer.innerHTML = '<p>Results will be displayed here.</p>';
+        });
+    </script>
+
+</body>
+
+</html>
