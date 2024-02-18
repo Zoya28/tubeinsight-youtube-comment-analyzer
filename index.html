@@ -15,7 +15,7 @@
         rel="stylesheet">
     <style>
         body {
-            background-image: url('https://th.bing.com/th/id/R.bf9fcf280a64946b7ab81bb3efa8eb15?rik=pVOrsgmQHZtOnw&riu=http%3a%2f%2f4.bp.blogspot.com%2f-bu27bOORGTY%2fTnfIey9unII%2fAAAAAAAABLs%2fS-DrEnSjqpo%2fs1600%2fyoutube_logo_grunge_desktop_background_Vvallpaper.net.jpg&ehk=gf8U9XFyeg8yMK5lZSIG%2f9xtXXAmQ9VEJn%2fmbweI1Jc%3d&risl=&pid=ImgRaw&r=0');
+            background-image: url("images/maxresdefault.jpg");
             /* Replace with your background image */
             background-size: cover;
             background-position: center;
@@ -28,12 +28,12 @@
         }
 
         #main-container {
-            background-color: rgb(46 14 14 / 73%);
+            background-color: rgba(46, 14, 14, 0.603);
             color: white;
             padding: 20px;
-            border-radius: 70px;
-            width: 69%;
-
+            padding-top: 10%;
+            width: 100%;
+            height: 100%;
         }
 
         #main-container p {
@@ -41,7 +41,7 @@
             margin-bottom: 1rem;
             text-align: center;
             font-family: 'Cormorant Garamond', serif;
-            font-size: 23px;
+            font-size: 30px;
             padding: 3px 28px;
         }
 
@@ -58,12 +58,20 @@
         #video-link-input,
         #description-input {
             margin-bottom: 10px;
+            border: 2px solid black;
         }
 
         #result-button {
+
             margin-bottom: 10px;
-            background-color: rgb(205 0 0);
-            border: 2px solid wheat;
+            background-color: rgb(97, 97, 97);
+            border: 2px solid black;
+            width: 100%;
+        }
+
+        #result-button:hover {
+            background-color: brown;
+            border: 2px solid white;
         }
     </style>
 </head>
@@ -106,7 +114,6 @@
             resultContainer.innerHTML = '<p>Results will be displayed here.</p>';
         });
     </script>
-
 </body>
 
 </html>
